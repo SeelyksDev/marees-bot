@@ -1,0 +1,12 @@
+{
+  "location": {
+    "name": "La Rochelle",
+    "latitude": 46.1591,
+    "longitude": -1.1536
+  },
+  "date": "2025-07-25",
+  "tides": [
+    { "type": "high", "time": "2025-07-25T05:45:00Z", "height_meters": 4.12 },
+    { "type": "low", "time": "2025-07-25T11:30:00Z", "height_meters": 0.95 }
+  ]
+}
