@@ -2,7 +2,7 @@ name: Marees Bot
 
 on:
   schedule:
-    - cron: '05 12 * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
   
 jobs:
