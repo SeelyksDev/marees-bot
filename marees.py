@@ -46,7 +46,12 @@ for maree in marees:
 
     maree_list.append((seaState, hour.strftime("%H:%M")))
 
-locale.setlocale(locale.LC_TIME, "fr_FR.UTF-8")
+try:
+    locale.setlocale(locale.LC_TIME, "fr_FR.UTF-8")
+except locale.Error:
+    # Fallback pour GitHub Actions
+    locale.setlocale(locale.LC_TIME, "C")
+    
 date = datetime.datetime.now()
 mois = date.strftime("%B").capitalize()
 subject = f"Marées du {date.day} {mois} {date.year} aux Sables-d'Olonne 🌊"
